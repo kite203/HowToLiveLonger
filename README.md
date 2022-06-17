@@ -2,7 +2,7 @@
 
 [![CN doc](https://img.shields.io/badge/文档-中文版-blue.svg)](README.md)
 [![EN doc](https://img.shields.io/badge/document-English-blue.svg)](README_en.md)
-[![VI doc](https://img.shields.io/badge/document-English-blue.svg)](README_vi.md)
+[![VI doc](https://img.shields.io/badge/document-Tiếng Việt-red.svg)](README_vi.md)
 
 - [1. 术语](#1-术语)
 - [2. 目标](#2-目标)
