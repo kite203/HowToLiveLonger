@@ -8,7 +8,7 @@
 - [2. Mục Đích](#2-Mục-Đích)
 - [3. Kết Quả Cơ Bản](#3-Kết-Quả-Cơ-Bản)
 - [4. Phân Tích](#4-Phân-Tích)
-- [5. Hành Động](#5-Hành-Động)
+- [5. Thực Hiện](#5-Thực-Hiện)
 - [6. Tham Khảo](#6-Tham-Khảo)
   - [6.1. Đầu Vào](#61-Đầu-Vào)
     - [6.1.1. Thể Rắn](#611-Thể-Rắn)
@@ -37,38 +37,38 @@
 
 ### 2. Mục Đích
 
-* 稳健地活得更久
+* Sống lâu hơn
 
-### 3. 关键结果
+### 3. Kết Quả Cơ Bản
 
-* 降低66.67%全因死亡率
-* 增加\~20年预期寿命
-* ~~维持多巴胺于中轴~~
+* Giảm tỷ lệ tử vong do mọi nguyên nhân xuống 66,67%
+* Tăng tuổi thọ \ ~ 20 năm
+* ~~ Duy trì dopamine ở mức cân bằng ~~
 
-### 4. 分析
+### 4. Phân Tích
 
-* 主要参考：对ACM的学术文献相对较多，可以作为主要参考
-* 增加寿命与ACM关系非线性：显然增加寿命与ACM关系是非线性函数，这里假设 `DeltaLifeSpan=(1/(1+DeltaACM)-1)*10`（DeltaACM为ACM变化值；公式欢迎优化）
-* 变量无法简单叠加：显然各个变量之间并不符合独立同分布假设，变量之间的实际影响也并不明确
-* 存在矛盾观点：所有的证据都有文献/研究对应，但注意到：有些文献之间有显著矛盾的观点（如对于碳水摄入比例的矛盾）；有些文献存在较大争议（如认为22点前睡觉会提升43%全因死亡率）
-* 研究仅表达相关：所有文献表明的更多是相关而非因果，在阅读时要考虑文献是否充分证明了因果 —— 如某文献表明了日均>=7000步的人有显著低的全因死亡率。但步数少的人可能包含更多长期病患，如果没有合理的排除这块数据，那此文献调查失真
+* Tài liệu tham khảo chính: Có tương đối nhiều tài liệu học thuật về ACM, có thể được sử dụng làm tài liệu tham khảo chính.
+* Mối quan hệ giữa tuổi thọ tăng lên và ACM là phi tuyến: Rõ ràng, mối quan hệ giữa tuổi thọ tăng lên và ACM là một hàm phi tuyến tính. Ở đây chúng tôi giả sử `DeltaLifeSpan = (1 / (1 + DeltaACM) -1) * 10` (DeltaACM là sự thay đổi giá trị của ACM; hoan nghênh sự tối ưu hóa công thức này)
+* Các biến không thể chỉ đơn giản là chồng lấn: Rõ ràng, các giả định về phân phối độc lập và giống hệt nhau không được đáp ứng giữa các biến và tác động thực tế giữa các biến là không rõ ràng
+* Quan điểm mâu thuẫn: Tất cả các bằng chứng đều liên quan đến tài liệu / nghiên cứu, nhưng lưu ý: một số tài liệu có quan điểm mâu thuẫn đáng kể (ví dụ: về tỷ lệ hấp thụ carbohydrate)；Một số tài liệu gây tranh cãi (ví dụ, người ta tin rằng đi ngủ trước 22h sẽ làm tăng tỷ lệ tử vong do mọi nguyên nhân lên 43%)
+* Nghiên cứu chỉ thể hiện mối tương quan: tất cả các tài liệu đều cho thấy mối tương quan nhiều hơn là mối quan hệ nhân quả, hãy xem xét liệu tài liệu có chứng minh đầy đủ mối quan hệ nhân quả khi đọc hay không - ví dụ, một tài liệu cho thấy rằng những người có trung bình hàng ngày> = 7000 bước có tỷ lệ tử vong do mọi nguyên nhân thấp hơn đáng kể. Tuy nhiên, những người ít bước hơn có thể bao gồm nhiều bệnh nhân dài hạn hơn. Nếu dữ liệu này không được loại trừ một cách hợp lý, khảo sát y văn sẽ bị bóp méo.
 
-### 5. 行动
+### 5. Thực Hiện
 
-* 输入
-  * 固体：吃白肉（-11%\~-3% ACM）、蔬果为主（-26%\~-17% ACM），多吃辣（-23% ACM），多吃坚果（-27%\~-4% ACM），*少吃蛋黄（否则+7% ACM/0.5颗/天）（存在争议）*，中量碳水、多吃植物蛋白（-10% ACM），少吃超加工食物（-62%\~-18%）
-  * 液体：喝咖啡（-22%\~-12% ACM），喝牛奶（-17%\~-10% ACM），喝茶（-15%\~-8% ACM），少喝或不喝甜味饮料（否则每天一杯+7% ACM，+多巴胺），戒酒或每周100g（纯酒精量(g)=饮酒量(ml)×酒精浓度(%)×酒精密度0.8g/ml）内（否则+\~50% ACM，无上限）
-  * 气体：不吸烟（否则+~50% ACM，-12\~-11年寿命）
-  * 光照：晒太阳（-~40% ACM）
-  * 药物：二甲双胍（糖尿病人相比正常人可以+3年）、复合维生素（-8%癌症风险）、亚精胺（-60%\~-30% ACM）、葡萄糖胺（-39% ACM）
-* 输出
-  * 运动：每周3次45分钟挥拍运动（-47% ACM）
-  * 日常：刷牙（-25% ACM）
-  * 睡眠：每天睡7小时全因死亡率最低；且22-24点间最好，*早睡+43% ACM，晚睡+15% ACM（存在争议）*
-* 上下文
-  * 体重：减肥（-54% ACM）
+* Đầu Vào
+  * Chất rắn: Ăn thịt trắng (-11% \ ~ -3% ACM), chủ yếu là rau và trái cây (-26% \ ~ -17% ACM), ăn nhiều thức ăn cay (-23% ACM), ăn nhiều hạt (- 27% \ ~ -4% ACM), * ăn ít lòng đỏ trứng hơn (nếu không thì + 7% ACM / 0,5 / ngày) (còn tranh cãi) *, carbohydrate vừa phải, nhiều protein thực vật hơn (-10% ACM), ít thực phẩm chế biến quá mức ( -62% \ ~ -18%)
+  * Chất lỏng: uống cà phê (-22% \ ~ -12% ACM), uống sữa (-17% \ ~ -10% ACM), uống trà (-15% \ ~ -8% ACM), uống ít hoặc không ngọt đồ uống (nếu không thì một cốc mỗi ngày + 7% ACM, + dopamine), kiêng rượu hoặc trong vòng 100g mỗi tuần (rượu nguyên chất (g) = lượng uống (ml) × nồng độ cồn (%) × mật độ cồn 0,8g / ml) (Nếu không thì + \ ~ 50% ACM, không có giới hạn trên)
+  * Không Khí: không hút thuốc (nếu không thì + ~ 50% ACM, -12 \ ~ -11 năm tuổi thọ)
+  * Ánh sáng: Tắm nắng (- ~ 40% ACM)
+  * Thuốc: Metformin (+3 tuổi cho bệnh nhân tiểu đường so với bình thường), Vitamin tổng hợp (-8% nguy cơ ung thư), Spermidine (-60% \ ~ -30% ACM), Glucosamine (-39% ACM)
+* Đầu Ra
+  * Tập thể dục: Đánh đu 45 phút 3 lần mỗi tuần (-47% ACM)
+  * Hàng ngày: Đánh răng (-25% ACM)
+  * Ngủ: 7 giờ một ngày để có tỷ lệ ACM thấp nhất; và tốt nhất là đi ngủ từ lúc 22-24 giờ, * ngủ sớm hơn + 43% ACM, ngủ muộn hơn + 15% ACM (còn tranh cãi) *
+* Nhân tố khác
+  * Cân nặng：giảm cân（-54% ACM）
 
-### 6. 证据
+### 6. Tham Khảo
 
 #### 6.1. 输入
 
