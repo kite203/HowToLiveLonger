@@ -31,11 +31,11 @@
 
 ---
 
-### 1. 术语
+### 1. Thuật Ngữ
 
-* ACM: All-Cause Mortality / 全因死亡率
+* ACM: All-Cause Mortality / Tử Vong do mọi nguyên nhân
 
-### 2. 目标
+### 2. Mục Đích
 
 * 稳健地活得更久
 
