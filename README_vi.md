@@ -11,9 +11,9 @@
 - [5. Thực Hiện](#5-Thực-Hiện)
 - [6. Tham Khảo](#6-Tham-Khảo)
   - [6.1. Đầu Vào](#61-Đầu-Vào)
-    - [6.1.1. Thể Rắn](#611-Thể-Rắn)
-    - [6.1.2. Thể Lỏng](#612-Thể-Lỏng)
-    - [6.1.3. Thể Khí](#613-Thể-Khí)
+    - [6.1.1. Chất Rắn](#611-Chất-Rắn)
+    - [6.1.2. Chất Lỏng](#612-Chất-Lỏng)
+    - [6.1.3. Chất Khí](#613-Chất-Khí)
     - [6.1.4. Tiếp Xúc Ánh Sáng Mặt Trời](#614-Tiếp-Xúc-Ánh-Sáng-Mặt-Trời)
     - [6.1.5. Sử Dụng Thuốc](#615-Sử-Dụng-Thuốc)
   - [6.2. Đầu Ra](#62-Đầu-Ra)
@@ -58,7 +58,7 @@
 * Đầu Vào
   * Chất rắn: Ăn thịt trắng (-11% \ ~ -3% ACM), chủ yếu là rau và trái cây (-26% \ ~ -17% ACM), ăn nhiều thức ăn cay (-23% ACM), ăn nhiều hạt (- 27% \ ~ -4% ACM), * ăn ít lòng đỏ trứng hơn (nếu không thì + 7% ACM / 0,5 / ngày) (còn tranh cãi) *, carbohydrate vừa phải, nhiều protein thực vật hơn (-10% ACM), ít thực phẩm chế biến quá mức ( -62% \ ~ -18%)
   * Chất lỏng: uống cà phê (-22% \ ~ -12% ACM), uống sữa (-17% \ ~ -10% ACM), uống trà (-15% \ ~ -8% ACM), uống ít hoặc không ngọt đồ uống (nếu không thì một cốc mỗi ngày + 7% ACM, + dopamine), kiêng rượu hoặc trong vòng 100g mỗi tuần (rượu nguyên chất (g) = lượng uống (ml) × nồng độ cồn (%) × mật độ cồn 0,8g / ml) (Nếu không thì + \ ~ 50% ACM, không có giới hạn trên)
-  * Không Khí: không hút thuốc (nếu không thì + ~ 50% ACM, -12 \ ~ -11 năm tuổi thọ)
+  * Chất Khí: không hút thuốc (nếu không thì + ~ 50% ACM, -12 \ ~ -11 năm tuổi thọ)
   * Ánh sáng: Tắm nắng (- ~ 40% ACM)
   * Thuốc: Metformin (+3 tuổi cho bệnh nhân tiểu đường so với bình thường), Vitamin tổng hợp (-8% nguy cơ ung thư), Spermidine (-60% \ ~ -30% ACM), Glucosamine (-39% ACM)
 * Đầu Ra
@@ -70,20 +70,20 @@
 
 ### 6. Tham Khảo
 
-#### 6.1. 输入
+#### 6.1. Đầu Vào
 
-##### 6.1.1. 固体
+##### 6.1.1. Chất Rắn
 
-* 白肉
-  * [JAMA子刊：食用红肉和加工肉类会增加心脏病和死亡风险！鱼肉和家禽肉则不会](https://zhuanlan.zhihu.com/p/268401670)
-    * 出处：[Associations of Processed Meat, Unprocessed Red Meat, Poultry, or Fish Intake With Incident Cardiovascular Disease and All-Cause Mortality](https://jamanetwork.com/journals/jamainternalmedicine/articlepdf/2759737/jamainternal_zhong_2020_oi_190112.pdf)
-    * 增加红肉摄入与死亡风险相关。八年内平均每天增加至少半份红肉摄入（半份红肉相当于14g加工红肉或40g非加工红肉）的调查对象，在接下来八年内全因死亡风险增加10％（HR, 1.10; 95%CI, 1.04-1.17）；每周吃两份红肉或加工肉类（但不包括家禽或鱼类）会使全因死亡风险增加3%
-    * ![红肉](https://user-images.githubusercontent.com/2707039/163703960-6f321de5-4daa-4ea5-95b9-af9c96f1c1bc.jpg)
-  * [红肉和白肉最大的区别是什么？为啥要这么分呢？](https://www.zhihu.com/question/67223570/answer/809785380)
-* 蔬果
-  * [每年54万人死亡，竟是因为水果吃得少！？这已成十大死亡因素之一！](https://www.sohu.com/a/322360740_164924)
-    * 出处：[Estimated Global, Regional, and National Cardiovascular Disease Burdens Related to Fruit and Vegetable Consumption: An Analysis from the Global Dietary Database (FS01-01-19) ](https://academic.oup.com/cdn/article-abstract/3/Supplement_1/nzz028.FS01-01-19/5516583)
-    * 每天摄入200克新鲜水果可使死亡率降低17%，糖尿病大血管并发症（如中风、缺血性心脏病等）风险降低13%，及糖尿病小血管并发症（如糖尿病肾病、糖尿病眼病、糖尿病足病等）风险降低28%
+* Thịt trắng
+    * [Vấn đề phụ của JAMA: Ăn thịt đỏ và thịt chế biến sẵn làm tăng nguy cơ mắc bệnh tim và tử vong! Cá và gia cầm sẽ không] (https://zhuanlan.zhihu.com/p/268401670)
+    * Nguồn：[Associations of Processed Meat, Unprocessed Red Meat, Poultry, or Fish Intake With Incident Cardiovascular Disease and All-Cause Mortality](https://jamanetwork.com/journals/jamainternalmedicine/articlepdf/2759737/jamainternal_zhong_2020_oi_190112.pdf)
+    * Ăn nhiều thịt đỏ có liên quan đến nguy cơ tử vong. Những người được hỏi trung bình tăng lượng thịt đỏ của họ lên ít nhất nửa khẩu phần mỗi ngày trong vòng trung bình tám năm (một nửa khẩu phần tương đương với 14g thịt đỏ đã qua chế biến hoặc 40g thịt đỏ chưa qua chế biến) có nguy cơ tăng 10% ACM trong tám năm tới (HR, 1,10; 95% CI, 1,04-1,17); ăn hai phần thịt đỏ hoặc thịt đã qua chế biến (nhưng không phải thịt gia cầm hoặc cá) mỗi tuần có liên quan đến việc tăng 3% ACM
+    * ![Thịt đỏ](https://user-images.githubusercontent.com/2707039/163703960-6f321de5-4daa-4ea5-95b9-af9c96f1c1bc.jpg)
+    * [Sự khác biệt lớn nhất giữa thịt đỏ và thịt trắng là gì? Tại sao lại phân biệt như vậy?](https://www.zhihu.com/question/67223570/answer/809785380)
+* Trái cây và rau
+  * [540.000 người chết mỗi năm vì họ ăn ít trái cây! ? Đây đã trở thành 1 trong 10 nguyên nhân gây tử vong hàng đầu!](https://www.sohu.com/a/322360740_164924)
+    * Nguồn：[Estimated Global, Regional, and National Cardiovascular Disease Burdens Related to Fruit and Vegetable Consumption: An Analysis from the Global Dietary Database (FS01-01-19) ](https://academic.oup.com/cdn/article-abstract/3/Supplement_1/nzz028.FS01-01-19/5516583)
+    * Ăn 200 gram trái cây tươi hàng ngày có thể giảm 17% tỷ lệ tử vong, các biến chứng mạch máu lớn của bệnh tiểu đường (như đột quỵ, bệnh tim thiếu máu cục bộ, v.v.)Giảm 13% nguy cơ và các biến chứng mạch nhỏ do tiểu đường (ví dụ, bệnh thận do tiểu đường, bệnh mắt do tiểu đường, bệnh bàn chân do tiểu đường, v.v.)风险降低28%
   * [《自然》子刊：每天二两西兰花，健康长寿都有啦！分析近6万人23年的数据发现，吃含黄酮类食物与死亡风险降低20%相关丨临床大发现](https://mp.weixin.qq.com/s/E6BAi-Vnhr1jXBm0Pys2ZQ)
     * 出处：[Flavonoid intake is associated with lower mortality in the Danish Diet Cancer and Health Cohort](https://www.nature.com/articles/s41467-019-11622-x)
     * 吃含黄酮类食物与死亡风险降低20%相关
